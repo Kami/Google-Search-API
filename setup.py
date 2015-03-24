@@ -10,7 +10,8 @@ setup(name='Google-Search-API',
 
       packages=['google'],
       install_requires=[
-        'beautifulsoup4>=4.3.2,<4.4'
+        'beautifulsoup4>=4.3.2,<4.4',
+        'selenium>=2.45,<3'
       ],
       setup_requires=['nose>=1.0'],
       test_suite='nose.collector',
