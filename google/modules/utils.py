@@ -1,5 +1,4 @@
 import time
-from selenium import webdriver
 import urllib2
 from functools import wraps
 
@@ -50,6 +49,7 @@ def write_html_to_file(html, filename):
 
 def get_browser_with_url(url, timeout=120, driver="firefox"):
     """Returns an open browser with a given url."""
+    from selenium import webdriver
 
     # choose a browser
     if driver == "firefox":
