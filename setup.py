@@ -9,7 +9,9 @@ setup(name='Google-Search-API',
       license='MIT',
 
       packages=['google'],
-
+      install_requires=[
+        'beautifulsoup4>=4.3.2,<4.4'
+      ],
       setup_requires=['nose>=1.0'],
       test_suite='nose.collector',
       tests_require=['nose', 'nose-cov']
