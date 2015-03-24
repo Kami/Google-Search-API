@@ -21,9 +21,9 @@ class GoogleResult:
         name = self._limit_str_size(self.name, 55)
         description = self._limit_str_size(self.description, 49)
 
-        list_google = ["GoogleResult(",
-                       "name={}".format(name), "\n", " " * 13,
-                       "description={}".format(description)]
+        list_google = [u"GoogleResult(",
+                       u"name={}".format(name), "\n", " " * 13,
+                       u"description={}".format(description)]
 
         return "".join(list_google)
 
