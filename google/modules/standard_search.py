@@ -57,7 +57,7 @@ def search(query, pages=1):
         html = get_html(url)
 
         if html:
-            soup = BeautifulSoup(html)
+            soup = BeautifulSoup(html, 'html5lib')
             lis = soup.findAll("div", attrs={"class": "g"})
 
             j = 0
